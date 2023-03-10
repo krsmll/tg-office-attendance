@@ -30,8 +30,6 @@ func initTGBot() *TGBot {
 		log.Panic(err)
 	}
 
-	tgAPI.Debug = true
-
 	return &TGBot{
 		api:              tgAPI,
 		updatesChannelID: channelID,
