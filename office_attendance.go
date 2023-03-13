@@ -40,7 +40,6 @@ func (t *TGBot) send(c tgbotapi.Chattable) {
 	_, err := t.api.Send(c)
 	if err != nil {
 		log.Println(err)
-		return
 	}
 }
 
