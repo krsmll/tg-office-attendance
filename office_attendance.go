@@ -61,7 +61,7 @@ func (t *TGBot) sendDailyMessage() {
 func loadEnv() {
 	err := godotenv.Load(".env")
 	if err != nil {
-		log.Panic(err)
+		log.Panic(err) -> return
 	}
 }
 
